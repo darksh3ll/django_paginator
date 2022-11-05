@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'components/navbar.html' %}
+<div class=" container   pt-5">
+{% for movie in top_movie %}
+    <div class=" d-flex flex-wrap justify-content-around ">
+        {% include 'components/movie_card.html' %}
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

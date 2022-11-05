@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="m-5">
+        <button>
+      <a class="mt-5" href={% url 'index' %}>Retour </a>
+    </button>
+    </div>
+
+
+
+    <div class="container pt-5">
+        <h1 class="title is-1 text-danger text-center">{{ movie.title }}</h1>
+        <h2 class="text-center  text-white m-5">{{ movie.content }}</h2>
+    </div>
+
+
+    <div class="ratio ratio-16x9 pt-5">
+        <iframe src="{{ movie.url }}" title={{ movie.content }} allowfullscreen></iframe>
+    </div>
+
+{% endblock %}

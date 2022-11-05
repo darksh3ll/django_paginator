@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'components/navbar.html' %}
+
+{#{% include 'components/header.html' %}#}
+
+<div class=" container   pt-5">
+
+    {% include 'components/nav_pagination.html' %}
+    <div class="d-flex flex-wrap justify-content-around pt-5">
+        {% if movies %}
+            {% for movie in movies %}
+                {% include 'components/movie_card.html' %}
+            {% endfor %}
+        {% else %}
+            <h1>Film not found</h1>
+        {% endif %}
+    </div>
+{% endblock %}
+
+</div>

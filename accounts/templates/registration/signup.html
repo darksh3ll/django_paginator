@@ -1,0 +1,21 @@
+{#{% extends 'base.html' %}#}
+{% block content %}
+    <div style="height: 100vh" class="container">
+        <h1>Creez un compte utilisateur pour accéder au catalogue des films</h1>
+        {% for error,message in errors.items %}
+            <h5 class="text-danger">{{ message }}</h5>
+        {% endfor %}
+        <div>
+            <form method="post">
+                {% csrf_token %}
+                <div class="container d-flex flex-column align-items-start">
+                       {{ form.as_p }}
+                </div>
+
+                <button type="submit">Confirmer</button>
+            </form>
+        </div>
+    </div>
+
+
+{% endblock %}

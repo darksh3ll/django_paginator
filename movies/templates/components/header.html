@@ -1,0 +1,21 @@
+<div class="top">
+    <div class="columns">
+        <div class="column is-full featured_wrapper p-0">
+         <img src="{{img }}" class="featured">
+            <div class="title_wrapper">
+                <h1  class="title is-1 text-white">{{ test }}</h1>
+                <h1 class="title is-1 text-white">French streamHD</h1>
+                  <span class="text-white"> Actuellement  {{ count }} films  au catalogue  {{ count_movies_adult }} films pour adulte</span>
+                <h2 class="text-white">Image et son de qualité HD, compatible mobile, PC et TV</h2>
+                <p class="title is-2 text-white">Le contenu est réservé à nos membres !</p>
+                <button class="button is-medium">
+                    <a class="text-white" href="{% url 'login' %}">S'identifier</a>
+                </button>
+                <p class="text-white  pt-4">
+                    <a class="text-white" href="{% url 'signup' %}"> Vous n'avez pas de compte ? Inscrivez-vous</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>

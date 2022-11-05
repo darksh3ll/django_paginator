@@ -1,0 +1,8 @@
+<div class=" movie_card  shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem;">
+    <a href="{% url 'detail' movie.id %}">
+        <img width="200" height="400" src={{ movie.poster }} class="card-img-top" alt="...">
+    </a>
+    <div class="card-body">
+        <h5 class="card-title text-center m-5 text-white">{{ movie.title }}</h5>
+    </div>
+</div>
